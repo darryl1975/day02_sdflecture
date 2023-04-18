@@ -1,11 +1,11 @@
 package sg.edu.nus.iss;
 
-public class MountainBike extends Bicycle {
+public class RoadBike extends Bicycle {
     
     public int seatHeight;
 
 
-    public MountainBike(int gear, int speed, int seatHeight) {
+    public RoadBike(int gear, int speed, int seatHeight) {
         super(gear, speed);
         this.seatHeight = seatHeight;
     }
@@ -20,10 +20,7 @@ public class MountainBike extends Bicycle {
 
     @Override
     public String toString() {
-        //return "MountainBike [seatHeight=" + seatHeight + "]";
         return super.toString() + "\nSeat Height=" + seatHeight + "\n";
     }
 
-    
-    
 }
